@@ -183,12 +183,6 @@
 			}
 		},
 		
-		/**
-		 * Returns the objects with a specific property and value, e.g. 'category', 'tags'
-		 * @param ctx:string	in what context, e.g. 'markers' 
-		 * @param options:object	property:string	the property to search within, value:string, operator:string (optional) (AND/OR)
-		 * @param callback:function(marker:google.maps.Marker, isFound:boolean)
-		 */
 		find: function(ctx, options, callback) {
 			var obj = this.get(ctx);
 			options.value = $.isArray(options.value) ? options.value : [options.value];
